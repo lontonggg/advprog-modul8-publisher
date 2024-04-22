@@ -20,3 +20,7 @@ URL amqp://guest:guest@localhost:5672 diperlukan agar terhubung ke broker AMQP. 
 ![Sending and Processing Screenshot](assets/images/sending_and_processing.png)
 
 Pada saat RabbitMQ berjalan dan kita menjalankan cargo run di Publisher dan Subscriber, maka Publisher akan mengirimkan 5 data event ke message broker yang diterima oleh Subscriber. Ketika Publisher di jalankan kembali, maka Publisher akan mengirimkan 5 data yang sama dengan sebelumnya ke message broker yang diterima oleh Subscriber.
+
+![Monitoring chart based on publisher](assets/images/monitoring_chart.png)
+
+Chart ini menunjukkan tentang message rates, yaitu sebanyak apa message broker menerima data dari Publisher dalam satu detik. Semakin banyak cargo run yang dijalankan pada Publisher, maka data yang dikirim oleh broker akan menjadi lebih banyak sehingga message rates akan meningkat.
