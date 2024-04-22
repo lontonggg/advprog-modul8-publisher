@@ -14,4 +14,9 @@ URL amqp://guest:guest@localhost:5672 diperlukan agar terhubung ke broker AMQP. 
 
 ## Running RabbitMQ as message broker
 
-![RabbitMQ Screenshot](assets/images/image.png)
+![RabbitMQ Screenshot](assets/images/running_rabbitmq.png)
+
+## Sending and processing event
+![Sending and Processing Screenshot](assets/images/sending_and_processing.png)
+
+Pada saat RabbitMQ berjalan dan kita menjalankan cargo run di Publisher dan Subscriber, maka Publisher akan mengirimkan 5 data event ke message broker yang diterima oleh Subscriber. Ketika Publisher di jalankan kembali, maka Publisher akan mengirimkan 5 data yang sama dengan sebelumnya ke message broker yang diterima oleh Subscriber.
